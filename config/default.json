@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://shishir:shishir@mern-stack-a98or.mongodb.net/test?retryWrites=true&w=majority",
+  "secret": "mysecret"
+}
