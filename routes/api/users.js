@@ -10,7 +10,7 @@ const User = require("../../models/Users");
 //  @route      POST /api/users
 //  @desc       Regiser user
 //  @access     public
-router.get(
+router.post(
   "/register",
   [
     check("name", "Name is reqiured")
