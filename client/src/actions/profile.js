@@ -33,7 +33,6 @@ export const getCurrentProfile = () => async dispatch => {
 export const getProfiles = () => async dispatch => {
   try {
     const res = await axios.get("/api/profile");
-    console.log("Hello");
 
     dispatch({
       type: GET_PROFILES,
@@ -50,8 +49,7 @@ export const getProfiles = () => async dispatch => {
 // Get profile by id
 export const getProfileById = userId => async dispatch => {
   try {
-    const res = await axios.get(`/api/profile/${userId}`);
-
+    const res = await axios.get(`/api/profile/user/${userId}`);
     dispatch({
       type: GET_PROFILE,
       payload: res.data
